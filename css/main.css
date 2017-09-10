@@ -1,0 +1,382 @@
+body{
+	color: #413f44;
+}
+
+.header{
+	width: 100%;
+	background: aliceblue;
+}
+
+.brand{
+	width: 40%;
+	float: left;
+	height: 20vh;
+	position: relative;
+
+}
+
+.brand h1{
+	font-family: 'jockey';
+	font-size: 45px;
+    position: absolute;
+    bottom: 5px;
+    margin-left: 25%;
+    cursor: pointer;
+}
+
+.menu{
+	width: 60%;
+	float: left;
+	height: 20vh;
+	position: relative;
+
+}
+
+.menu .language{
+	width: 83%;
+	font-family: 'jockey';
+	position: absolute;
+	top: 5px;
+}
+
+.menu button{
+	float: right;
+	border-style: none;
+	background: slategrey;
+	cursor: pointer;
+	color: white;
+	font-weight: bold;
+}
+
+.menu button:hover{
+	color: #6a8ba5;
+	background: rgba(192, 192, 192, 0.75);
+}
+
+
+.menu ul{
+	width: 83%;
+	font-family: 'jockey';
+	position: absolute;
+	bottom: 0;
+}
+
+.menu li{
+	float: right;
+	font-size: 30px;
+	margin-left: 7%;
+}
+
+.menu li a{
+	color: #413f44;
+	cursor: pointer;
+	text-decoration: none;
+	letter-spacing: 0.5px;
+}
+
+.menu li a:hover{
+	color: #3185c8;
+}
+
+.menu li a::after{
+	content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: #3185c8;
+    margin-top: 5px;
+    transition: width .6s ease;
+}
+
+.menu li a:hover::after{
+	width: 100%;
+}
+
+.line{
+	width: 100%;
+	height: 1px;
+	background: slategrey;
+	float: left
+}
+
+.gallery{
+	float: left;
+	width: 80%;
+    margin: 0.5% 0 0.5% 10%;
+	height: 400px;
+}
+
+.imageDescription{
+	width: 54%;
+	float: left;
+	height: 400px;
+	margin: 15% 0 0 7%;
+	font-family: 'jockey';
+	font-size: 70px;
+}
+
+.imageDescription span{
+	color: #3185c8;
+	font-size: 60px;
+}
+
+.gallery img{
+    float: left;
+    width: 39%;
+    height: 350px;
+    margin-top: 25px;
+}
+
+
+.infoSection{
+	float: left;
+	width: 80%;
+    margin: 0.5% 0 0.5% 10%;
+}
+
+
+
+.banner{
+	font-family: 'jockey';
+	background: #7eadd2;
+    width: 32%;
+    float: left;
+    margin: 30px 0 30px 2%;
+	cursor: pointer;
+	transition: all 0.6s ease;
+}
+
+.box1{
+	margin-left: 0%;
+}
+
+.box1:before {
+    content: '';
+    position: absolute;
+    border-top: 50px solid white;
+    border-left: 50px solid #6a8ba5;
+    width: 0;
+    right: 64.4%;
+}
+
+.box2:before {
+    content: '';
+    position: absolute;
+    border-top: 50px solid white;
+    border-left: 50px solid #6a8ba5;
+    width: 0;
+	right: 37.2%;
+
+}
+
+.box3:before {
+    content: '';
+    position: absolute;
+    border-top: 50px solid white;
+    border-left: 50px solid #6a8ba5;
+    width: 0;
+    right: 10%;
+}
+
+.innerBox{
+	padding: 12%;
+    margin-top: 5%;
+}
+
+.banner span{
+	font-size: 40px;
+}
+
+.banner p{
+	color: white;
+	font-size: 20px;
+	margin: 5% 0 5% 0;
+}
+
+.banner a{
+	color: #413f44;
+	font-size: 25px;
+	cursor: pointer;
+}
+
+.banner a:hover{
+	color: white;
+}
+
+.banner:hover{
+	background: slategrey;
+}
+
+.banner:hover:before{
+    border-left: 50px solid #5d656d;
+}
+
+.companyInfo{
+	width: 80%;
+	margin-left: 10%;
+	float: left;
+}
+
+.companyInfo h2{
+	font-family: 'jockey';
+	width: 100%;
+	font-size: 100px;
+
+}
+
+.companyInfo h3{
+	font-family: 'jockey';
+	width: 100%;
+	font-size: 70px;
+	color: #3185c8;
+}
+
+.companyInfo .txt1{
+	font-family: 'jockey';
+	margin: 5% 0 2% 0;
+	width: 100%;
+	font-size: 30px;
+}
+
+.companyInfo .txt2{
+	width: 100%;
+	font-size: 20px;
+	margin-bottom: 5%;
+
+}
+
+
+.companyAbout{
+	width: 80%;
+	margin-left: 10%;
+	float: left;
+}
+
+.companyAbout .line{
+	margin-left: 0;
+	height: 1px;
+	width: 80%;
+
+}
+
+.companyAbout .txt1{
+	font-family: 'jockey';
+	margin: 7% 0 5% 0;
+	width: 100%;
+	font-size: 40px;
+	color: #3185c8;
+	float: left;
+
+}
+
+.companyAbout .txt2{
+	font-family: 'jockey';
+	width: 100%;
+	font-size: 30px;
+	margin: 5% 0 3% 0;
+	float: left;
+}
+
+.companyAbout .txt3{
+	width: 90%;
+	font-size: 20px;
+	margin: 0 0 5% 0;
+	float: left;
+}
+
+.companyWhy{
+	width: 50%;
+	float: left;
+}
+
+.companyWho{
+	width: 50%;
+	float: left;
+}
+
+
+
+
+
+
+
+
+
+.footer{
+    float: left;
+    width: 100%;
+    margin-top: 0.2%;
+    background: rgba(110, 137, 158, 0.47);
+    border-radius: 5px;
+    position: relative;
+    padding-bottom: 2%;
+}
+
+.footerBox{
+    width: 26.6%;
+    margin: 2% 0 0.5% 0;
+    float: left;
+	font-family: 'jockey';
+}
+
+.socialMedia{
+	margin-left: 10%;
+}
+
+.footer .fa{
+	margin-right: 3%;
+	cursor: pointer;
+}
+
+.footerBox p{
+	cursor: pointer;
+	margin: 5% 0 0 20%;
+	font-size: 17px;
+}
+
+
+.footer p:hover{
+	color: white;
+}
+
+
+.footerTitle{
+	font-size: 23px;
+	margin-left: 20%;
+
+}
+
+.register a{
+	text-decoration: none;
+	color: #413f44;
+	cursor: pointer;
+	font-family: 'arial';
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    margin: 0 1% 0.5% 0;
+   	font-size: 10px;
+}
+
+.register a:hover{
+	color: whitesmoke;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
