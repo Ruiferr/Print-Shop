@@ -29,8 +29,21 @@
 			</div>
 			<div class="line"></div>
 			<div class="gallery">
-				<div class="imageDescription">Professional<br><span>Print</span></div>
-				<img src="img/cmyk.jpg"/>	
+				<div class="frame">
+				  <img class="slideImg" src="img/img1.jpg" >
+				  <img class="slideImg" src="img/img2.jpg" >
+				  <img class="slideImg" src="img/img3.jpg" >
+
+				  <div class="gallery-tooltip">
+
+				    <div class="left-arrow" onclick="plusDivs(-1)">&#10094;</div>
+				    <div class="right-arrow" onclick="plusDivs(1)">&#10095;</div>
+				    <span class="radio-select dots" style="margin-left:4.5%;" onclick="currentDiv(1)"></span>
+				    <span class="radio-select dots" onclick="currentDiv(2)"></span>
+				    <span class="radio-select dots" onclick="currentDiv(3)"></span>
+
+				  </div>
+				</div>	
 			</div>
 			<div class="line"></div>
 			<div class="infoSection">
@@ -80,7 +93,7 @@
 					<p class="txt3">Ut vix nostrum appetere percipit, eam tritani alterum probatus ad. Ne ipsum repudiandae mel. Suavitate reformidans ad nam, quo in bonorum corpora. Quis equidem perfecto id nam, dicam omittam nominati usu ne, pri ne ipsum omnium petentium.</p>
 				</div>
 			</div>
-			<div class="line"></div>
+			<div class="line" style="width: 100%; margin: 0"></div>
 			<div class="footer">
 				<div class="footerBox socialMedia">
 					<span class="footerTitle">Follow Us</span>
@@ -109,5 +122,5 @@
 			
 		</div>
 
-	</body>
+		</body>
 </html>

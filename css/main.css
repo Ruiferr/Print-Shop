@@ -93,11 +93,16 @@ body{
 }
 
 .line{
-	width: 100%;
+	width: 80%;
+	margin-left: 10%;
 	height: 1px;
 	background: slategrey;
 	float: left
 }
+
+
+
+/* GALLERY */
 
 .gallery{
 	float: left;
@@ -106,26 +111,74 @@ body{
 	height: 400px;
 }
 
-.imageDescription{
-	width: 54%;
-	float: left;
-	height: 400px;
-	margin: 15% 0 0 7%;
-	font-family: 'jockey';
-	font-size: 70px;
+.frame{
+	max-width:100%;
+	margin:auto;
+	position:relative
 }
 
-.imageDescription span{
-	color: #3185c8;
-	font-size: 60px;
+.slideImg {
+	width:100%;
+	display:none;
+	animation: fading 10s infinite
 }
 
-.gallery img{
-    float: left;
-    width: 39%;
-    height: 350px;
-    margin-top: 25px;
+@keyframes fading{0%{opacity:0}50%{opacity:1}100%{opacity:0}}
+
+.left-arrow, .right-arrow, .radio-select { 
+	cursor:pointer
 }
+
+.radio-select{
+    height: 1.5vh;
+    width: 1.5vh;
+    display: inline-block;
+    border-radius:50%;
+    border:1px solid #413f44;
+    background-color:transparent
+}
+
+.radio-select:hover{
+	opacity: 0.5;
+}
+
+.left-arrow{
+	float:left;
+	color: #413f44;
+}
+
+.left-arrow:hover, .right-arrow:hover{
+	opacity: 0.7;
+}
+
+.right-arrow{
+	float:right;
+	color: #413f44;
+}
+
+.gallery-tooltip{
+	width:100%;
+	display: inline-block;
+    padding: 0.01em 16px;
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 3vw;
+    color: #000;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translate(-50%,0%);
+}
+
+.color-select{
+	background-color: #413f44;
+}
+
+
+/* GALLERY */
+
+
+
 
 
 .infoSection{
